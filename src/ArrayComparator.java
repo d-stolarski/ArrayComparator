@@ -4,7 +4,7 @@ public class ArrayComparator {
         boolean areEqual = true;
         for (int i = 0; i < firstTab.length; i++) {
             if (firstTab.length != secondTab.length || firstTab[i].length != secondTab[i].length) {
-                return false;
+                areEqual = false;
             } else {
                 for (int j = 0; j < firstTab[i].length; j++) {
                     if (firstTab[i][j] == secondTab[i][j] && firstTab[i].length == secondTab[j].length) {
